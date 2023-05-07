@@ -1,0 +1,15 @@
+<p>comp3 works!</p>
+<!-- <div class="box">
+    User name: <strong>{{userName}}</strong>
+    <br><br>
+    <input type="text" placeholder="update user  name" #uname>
+    <button class="btn btn-primary ms-2" (click)="updateUserName(uname)" >Update</button>
+</div> -->
+
+<div class="box">
+    First Name: <strong>{{ userName.fname }}</strong> <br>
+    <input type="text" #fname placeholder="First name" [value]="userName.fname"><br><br>
+    Last Name :<strong>{{ userName.lname }}</strong><br>
+    <input type="text" #lname placeholder="Last name" [value]="userName.lname"><br>
+    <button class="btn btn-primary mt-2" (click)="updateUserName(fname.value, lname.value)">Update</button>
+  </div>
